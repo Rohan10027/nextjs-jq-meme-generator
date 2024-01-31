@@ -1,4 +1,5 @@
 # Fake A Tweet
+<img width="853" alt="image" src="https://github.com/Rohan10027/nextjs-jq-meme-generator/assets/90006085/bd7f3da9-3266-45c0-acd0-7b5941d0f9df">
 
 Fake a Tweet is a simple web application that allows users to create dummy tweets and download them as images.This project is built using Next.js to provide an easy way to generate fictitious tweets for various purposes, such as memes, educational content, or social media posts.
 
