@@ -3,6 +3,8 @@
 Create a gallery of memes using NextJS that renders posts from reddit.com/r/memes.
 
 <img width="853" alt="image" src="https://github.com/Rohan10027/nextjs-jq-meme-generator/assets/90006085/bd7f3da9-3266-45c0-acd0-7b5941d0f9df">
+<img width="726" alt="image" src="https://github.com/Rohan10027/nextjs-jq-meme-generator/assets/90006085/7025a4cb-2665-490b-99d2-21b94e401118">
+
 
 # Instructions
 • You can use Reddit's API to fetch the thumbnail and URL for each post.
