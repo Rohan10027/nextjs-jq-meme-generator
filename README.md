@@ -1,58 +1,55 @@
-# Fake A Tweet
+# Nextjs jq meme generator
+
+Create a gallery of memes using NextJS that renders posts from reddit.com/r/memes.
+
 <img width="853" alt="image" src="https://github.com/Rohan10027/nextjs-jq-meme-generator/assets/90006085/bd7f3da9-3266-45c0-acd0-7b5941d0f9df">
 
-Fake a Tweet is a simple web application that allows users to create dummy tweets and download them as images.This project is built using Next.js to provide an easy way to generate fictitious tweets for various purposes, such as memes, educational content, or social media posts.
-
+# Instructions
+• You can use Reddit's API to fetch the thumbnail and URL for each post.
+• You can use the Photoswipe library to implement the gallery. Clicking on a thumbnail in the gallery should display the image in its full resolution.
+• Also, the gallery should scroll infinitely. You can fetch more entries using the after attribute (as the user scrolls down).
 Application Features:
 
-- Tweet Creation: Users can input text, username, and profile picture to create custom tweets.
-- Image Download: Generated tweets can be downloaded as image files for sharing on social media or other platforms.
-- Customization: You can customize the appearance of the tweet, including the text, username, and profile picture.
-- Responsive UI: The app is responsive and adapts to different screen sizes.
+# Setting up NextJS Project:
+Begin by setting up a new NextJS project using create-next-app or any preferred method.
 
-Check out the website live on [fake-a-tweet.vercel.app](https://fake-a-tweet.vercel.app/) .
+# Reddit API Integration:
+Use Reddit's API to fetch posts from the "memes" subreddit. You may need to obtain API credentials from Reddit if required.
 
-## Preview
+# Fetching Initial Posts:
+Use the Reddit API to fetch the initial set of posts from https://www.reddit.com/r/memes.json. Extract relevant information such as post title, thumbnail, and URL.
 
-![Website preview](https://github.com/riad-azz/readme-storage/blob/main/fake-a-tweet/desktop-preview.png?raw=true)
+# Displaying Thumbnails:
+Display the fetched post thumbnails in a grid on the main page. You can use NextJS's Image component or a similar solution for efficient image loading.
 
-## Getting Started
+# Infinite Scrolling:
+Implement infinite scrolling so that as the user scrolls down, more entries are fetched. Use the after attribute in the Reddit API to paginate through the posts.
 
-Clone the project
+# Optimizing Image Loading:
+Optimize image loading by using lazy loading techniques. Load images only when they are about to enter the viewport to improve performance.
 
-```bash
-git clone https://github.com/riad-azz/fake-a-tweet.git
-```
+# Error Handling:
+Implement error handling for API requests. Handle cases where the Reddit API might return errors or if there are issues loading images.
 
-Install dependencies
+# Responsive Design:
+Ensure that the gallery is responsive to different screen sizes. Test on various devices and consider using responsive design techniques.
 
-```bash
-cd fake-a-tweet && npm install
-```
+# Documentation:
+Document the code and provide clear instructions on how to run the application. Include any necessary setup steps and dependencies.
 
-run the development server:
+# Deployment:
+Deploy the NextJS application to a hosting platform of your choice. Ensure that the deployed version works as expected.
 
-```bash
+# Future Improvements:
+Consider potential future improvements such as caching mechanisms to improve performance, adding search functionality, or incorporating user authentication for personalized experiences.
+Check out the website live on (https://rebrand.ly/rohancvbn/vercel-app)
+
+
+# Start Application on localhost
 npm run dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The easiest way to deploy your Next.js app is to use the https://rebrand.ly/rohancvbn/vercel-app from the creators of Next.js.
